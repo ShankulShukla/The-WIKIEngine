@@ -14,5 +14,9 @@ It also serve as a good example of how we can scrape data from websites and proc
 ## INTERNAL OVERVIEW -
 
 The **WIKICrawler** starts with a URL to visit taken from the user as input known as the *seed page*. As the crawler visits the seed page, it gets bunch of hyperlinks in the page and adds them to the list of URL's to be visited, also different title keywords found while scraping the page act as the keys for the index dictionary and url associated with that word is used in the value list of the dictionary.
-These task are being operated in the guidance of *threader* which divides the task of visiting the pages into threads, for concurrent execution leading to *maximum utilization of CPU*. This process is then repeated in accordance to the number of pages to be crawled and the size of index to be built as the user want.  
+These task are being operated in the guidance of *threader* which divides the task of visiting the pages into threads, for concurrent execution leading to *maximum utilization of CPU*. This process is then repeated in accordance to the number of pages to be crawled and the size of index to be built as the user want. 
+
+## FUTURE GOALS
+
+To implement page ranking algorithm to display best and most relevant websites with each search of keywords in the index.
 
