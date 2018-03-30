@@ -1,10 +1,11 @@
 # The WIKICrawler
 ## INTRODUCTION -
 
-**WIKICrawler** is a simple, multithreaded and efficient web crawler which mimic's the functionalities of modern search engines used in web browsers for surfing over the internet. As *wikipedia* states..
+**WIKICrawler** is a simple, multithreaded and efficient web crawler which mimic's the functionalities of usual web spider but it is also having additional functionality of a search engine for surfing over the internet a.k.a providing useful results for searched keyword.
+Beginners can understand what crawler is .. by looking over the [Wikipedia](https://en.wikipedia.org/wiki/Web_crawler) page on the topic which for refrence states..
 
-*A Web crawler, sometimes called a spider, is an Internet bot that systematically browses the World Wide Web, typically for the purpose of Web indexing (web spidering).
-Web search engines and some other sites use Web crawling or spidering software to update their web content or indices of others sites' web content. Web crawlers copy pages for processing by a search engine which indexes the downloaded pages so users can search more efficiently.*
+'*A Web crawler, sometimes called a spider, is an Internet bot that systematically browses the World Wide Web, typically for the purpose of Web indexing (web spidering).
+Web search engines and some other sites use Web crawling or spidering software to update their web content or indices of others sites' web content. Web crawlers copy pages for processing by a search engine which indexes the downloaded pages so users can search more efficiently.*'
 
 
 **WIKICrawler** is good way of beginners trying to understand the working of crawler a.k.a spiders in a very easy and implemented manner.
