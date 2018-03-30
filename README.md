@@ -24,6 +24,10 @@ These task are being operated in the guidance of *threader* which divides the ta
 
 At last user can make use of the index dictionary created via crawler stored in a json file to search for words and can find the most relevant webpages in accordance to the criteria provided in the WIKI-search.
 
+### For more undersatnding refer to following illustration- 
+
+![project](https://user-images.githubusercontent.com/30331393/38129174-7fa1bf22-341b-11e8-98a9-0ee809ca1144.png)
+
 ## FUTURE SCOPE
 
 > For maintaining the simplicity following ideas are being ignored, but one can implement these ideas for providing optimisations to **WIKIEngine** -
