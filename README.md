@@ -13,7 +13,8 @@ Web search engines and some other sites use Web crawling or spidering software t
 - **WIKIEngine** is good way for beginners trying to understand the working of crawler a.k.a spiders in a very easy and implemented manner.
 - One can also understand that how *multithreading* can be used to achive maximum efficency in API related operation by the CPU.
 - It also serve as a good example of how we can scrape data from websites and process it to obtain uesful data , which lead onto the formation of data mining intellect.
-- **WIKIEngine** can also be used to interpret the basics of how search engines make use of the web index created by crawler to provide best results for the varied inputs by users. 
+- **WIKIEngine** can also be used to interpret the basics of how search engines make use of the web index created by crawler to provide best results for the varied inputs by users.
+- Best results are being formulated by the use of the *stemming* and *stopwords* tools available in nltk(natural language tool kit) library.
 
 ## INTERNAL OVERVIEW -
 
