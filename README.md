@@ -1,7 +1,7 @@
 # The WIKIEngine
 ## INTRODUCTION -
 
-**WIKIEngine** is a simple, multithreaded and efficient web crawler which mimic's the functionalities of usual web spider but it is also having additional functionality of a search engine for surfing over the internet a.k.a providing useful results for searched keyword.
+**WIKIEngine** is a simple, multi-threaded and efficient web crawler which mimic's the functionalities of usual web spider but it is also having additional feature of a search engine for surfing over the internet a.k.a providing useful results for searched keyword.
 
 
 Beginners can understand what crawler is ... by looking over the [Wikipedia](https://en.wikipedia.org/wiki/Web_crawler) page on the topic which for refrence states..
@@ -10,7 +10,7 @@ Beginners can understand what crawler is ... by looking over the [Wikipedia](htt
 Web search engines and some other sites use Web crawling or spidering software to update their web content or indices of others sites' web content. Web crawlers copy pages for processing by a search engine which indexes the downloaded pages so users can search more efficiently.*'
 
 
-- **WIKIEngine** is good way of beginners trying to understand the working of crawler a.k.a spiders in a very easy and implemented manner.
+- **WIKIEngine** is good way for beginners trying to understand the working of crawler a.k.a spiders in a very easy and implemented manner.
 - One can also understand that how *multithreading* can be used to achive maximum efficency in API related operation by the CPU.
 - It also serve as a good example of how we can scrape data from websites and process it to obtain uesful data , which lead onto the formation of data mining intellect.
 - **WIKIEngine** can also be used to interpret the basics of how search engines make use of the web index created by crawler to provide best results for the varied inputs by users. 
@@ -25,7 +25,7 @@ At last user can make use of the index dictionary created via crawler stored in 
 
 ## FUTURE SCOPE
 
-> For maintaining the simplicity following ideas are being ignored, but one can implement these ideas for providing optimisation to **WIKIEngine** -
+> For maintaining the simplicity following ideas are being ignored, but one can implement these ideas for providing optimisations to **WIKIEngine** -
 - Users can the store the index dictionary into an [hash table](https://en.wikipedia.org/wiki/Hash_function) for fast accessing.
 - [Suffix tree](https://en.wikipedia.org/wiki/Suffix_tree) implementation for efficient searching over the index. 
 
