@@ -31,7 +31,7 @@ At last user can make use of the index dictionary created via crawler stored in 
 
 ## FUTURE SCOPE
 
-> For maintaining the simplicity following ideas are being ignored, but one can implement these ideas for providing optimisations to **WIKIEngine** -
+> For maintaining the simplicity following ideas are being ignored, but one can implement these ideas for providing optimizations to **WIKIEngine** -
 - Users can the store the index dictionary into an [hash table](https://en.wikipedia.org/wiki/Hash_function) for fast accessing.
 - [Suffix tree](https://en.wikipedia.org/wiki/Suffix_tree) implementation for efficient searching over the index. 
 
