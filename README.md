@@ -29,6 +29,14 @@ At last user can make use of the index dictionary created via crawler stored in 
 
 ![project](https://user-images.githubusercontent.com/30331393/38129174-7fa1bf22-341b-11e8-98a9-0ee809ca1144.png)
 
+
+## How to run it...
+1. Just git clone the repo.
+2. In command prompt, cd to the directory of WIKIEngine.
+3. Run the main_spider.py with python.(parsing the web)
+4. Run the WIKI-search.py with python to search over different word in new parsed dictionary formed
+> For more understanding look forward to see the code.
+
 ## FUTURE SCOPE
 
 > For maintaining the simplicity following ideas are being ignored, but one can implement these ideas for providing optimizations to **WIKIEngine** -
