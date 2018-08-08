@@ -89,7 +89,9 @@ class webcrawler:
 
 
 if __name__ == '__main__':
+    print("Initiate spider with a url (from wikipedia) - ")
     url = input()  # input url from user
+    print("Parsing the web ..... ")
     start = time.time()  # help in visualizing the time taken according to the threads taken with respect to the sites crawled
     content_first = parser.get_content(url)
     webcrawler.domain_name = network.get_domain(url)#extracting domain name
@@ -119,3 +121,4 @@ if __name__ == '__main__':
     #can print out the seen pages list
     print('TOTAL {} PAGES CRAWLED !! '.format(counter))
     print('WORD INDEX SIZE - ',len(webcrawler.index))
+    print("You can now play with WIKI-search")
