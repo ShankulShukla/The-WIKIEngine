@@ -30,7 +30,7 @@ At last user can make use of the index dictionary created via crawler stored in 
 ![project](https://user-images.githubusercontent.com/30331393/38129174-7fa1bf22-341b-11e8-98a9-0ee809ca1144.png)
 
 
-## How to run it...
+## How to use it...
 1. Just git clone the repo.
 2. In command prompt, cd to the directory of WIKIEngine.
 3. Run the main_spider.py with python.(parsing the web)
