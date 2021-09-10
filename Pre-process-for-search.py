@@ -35,5 +35,5 @@ for i in index.keys():
 
 
 #creating a new database for the processed index, specially used for searching
-with open('data.json','w') as op:
+with open('index.json','w') as op:
     json.dump(data,op)

@@ -11,12 +11,12 @@ class network:
             #print("PAGE STATUS-", page)
             """
             Can see status of the pages also being loaded 
-            Status in 200's are the best loaded
+            Status in 200's are successful response
             """
             return page
         except:
             print('Error loading the page - ',url)
-            sys.exit(1)
+            sys.exit(1) # terminates the thread
 
 
 
@@ -26,4 +26,4 @@ class network:
             return 'https://' + domain
         except:
             print('Error while getting the domain name!!!')
-            sys.exit(1)
+            sys.exit(1) # terminates the thread

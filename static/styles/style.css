@@ -1,0 +1,75 @@
+.form-control{
+    border-radius: 0;
+}
+
+.col{
+    padding-right: 0;
+}
+
+body{
+    background-color: #330066;
+}
+a:hover{
+text-decoration: none;
+}
+
+.resultHead
+{
+font-style: italic;
+    font-family: unset;
+    font-size: 14px;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.heading{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.resultBlock {
+    padding: 0px 4px;
+    margin: 10px 0px;
+  }
+
+  .arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.link-wrapper{
+    padding: 6px 16px;
+}
+
+.link-div{
+    padding: 4px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.nav-bar{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+.nav-bar .active{
+border: 1px solid #ddd;
+background-color: #330066;
+padding-bottom: 2px !important;
+color: white;
+
+}
+.nav-bar .padding{
+padding: 10px;
+cursor: pointer;
+}
+
+#imageResult, .display-none{
+display: none;
+}

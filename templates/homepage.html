@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<body>
+
+    <div class="container bg-white">
+        <div class="row justify-content-center">
+            <div class="jumbotron p-3 p-md-4 text-white rounded bg-dark mt-3">
+                <div class="col-md-6 px-0">
+                    <h1 class="display-4 font-italic"><a href="/" class="outline-none">WIKI-Engine</a></h1>
+                    <p class="lead my-3">A search engine with multiple functionalities to serve the client the need of the hour blah blah</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <form action="/search" method="Post">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <input class="form-control form-control-lg form-control-borderless" value='{{key}}' type="search" name="keyword" placeholder="Search topics or keywords" required>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-lg" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="py-3 float-right">
+                     <a href="https://github.com/ShankulShukla/The-WIKIEngine" class="text-dark font-weight-light font-italic ">
+                                <img src="static/GitHub-Mark-32px.png">&nbsp;Visit Code Implementation</a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+
+                <div class='{{"display-none nav-bar" if key == "" else "nav-bar"}}'>
+                    <span class="padding active" id="page">Pages</span>
+                    <span class="padding" id="image">Images</span>
+                </div>
+                <div id="pageResult">
+                    {% if res_l1|length > 0 %}
+                        <div class="resultHead">Most relevant - ({{res_l1|length}} results) </div>
+                        {% for key in res_l1 %}
+                            <div class="resultBlock">
+                                <div class="heading">{{ key }}</div>
+                                <div class="link-wrapper">
+                                    {% for val in res_l1[key]%}
+                                    <div class="link-div">
+                                        <i class='arrow right'></i>
+                                    <a href={{ val }}>{{ val }}</a>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+
+                    {% if res_l2|length > 0 %}
+                        <div class="resultHead">Other results - ({{res_l2|length}}results) </div>
+                        {% for key in res_l2 %}
+                            <div class="resultBlock">
+                                <div class="heading">  {{ key }}</div>
+                                <div class="link-wrapper">
+                                    {% for val in res_l2[key]%}
+                                    <div class="link-div">
+                                        <i class='arrow right'></i>
+                                    <a href={{ val }}>{{ val }}</a>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+
+                    {% if res_l3|length > 0 %}
+                        <div class="resultHead">Extended results - ({{res_l3|length}}results) </div>
+                        {% for key in res_l3 %}
+                            <div class="resultBlock">
+                                <div class="heading">  {{ key }}</div>
+                                <div class="link-wrapper">
+                                    {% for val in res_l3[key]%}
+                                    <div class="link-div">
+                                        <i class='arrow right'></i>
+                                    <a href={{ val }}>{{ val }}</a>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+
+                </div>
+
+                <div id="imageResult">
+                    {% if imgres_l1|length > 0 %}
+                        <div class="resultHead">Most relevant - ({{imgres_l1|length}} results)</div>
+                        {% for key in imgres_l1 %}
+                            <div class="resultBlock">
+                                <div class="heading">{{ key }}</div>
+                                <div class="link-wrapper">
+                                    {% for val in imgres_l1[key]%}
+                                    <div class="link-div">
+                                        <i class='arrow right'></i>
+                                        <a href={{ val }}>{{ val }}</a>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+
+                    {% if imgres_l2|length > 0 %}
+                        <div class="resultHead">Other results - ({{imgres_l2|length}}results) </div>
+                        {% for key in imgres_l2 %}
+                            <div class="resultBlock">
+                                <div class="heading">  {{ key }}</div>
+                                <div class="link-wrapper">
+                                    {% for val in imgres_l2[key]%}
+                                    <div class="link-div">
+                                        <i class='arrow right'></i>
+                                        <a href={{ val }}>{{ val }}</a>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+
+                    {% if imgres_l3|length > 0 %}
+                        <div class="resultHead">Extended Results - ({{imgres_l3|length}}results) </div>
+                        {% for key in imgres_l3 %}
+                            <div class="resultBlock">
+                                <div class="heading">  {{ key }}</div>
+                                <div class="link-wrapper">
+                                    {% for val in imgres_l3[key]%}
+                                    <div class="link-div">
+                                        <i class='arrow right'></i>
+                                        <a href={{ val }}>{{ val }}</a>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+<script>
+    function clickpage() {
+        if(!document.getElementById("page").classList.contains("active"))
+        {
+            document.getElementById("image").classList.remove("active");
+            document.getElementById("page").classList.add("active");
+            document.getElementById("imageResult").style.display = "none";
+            document.getElementById("pageResult").style.display = "block";
+        }
+    }
+    function clickimage() {
+        if(!document.getElementById("image").classList.contains("active"))
+        {
+            document.getElementById("page").classList.remove("active");
+            document.getElementById("image").classList.add("active");
+            document.getElementById("imageResult").style.display = "block";
+            document.getElementById("pageResult").style.display = "none";
+        }
+    }
+    document.getElementById('page').onclick = clickpage;
+    document.getElementById('image').onclick = clickimage;
+</script>
+</body>
+</html>
