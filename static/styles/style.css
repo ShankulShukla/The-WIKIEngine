@@ -66,10 +66,46 @@ color: white;
 
 }
 .nav-bar .padding{
-padding: 10px;
-cursor: pointer;
+    padding: 0px 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 32px;
+    display: inline-block;
+    text-align: center;
 }
 
 #imageResult, .display-none{
 display: none;
+}
+.color-red{
+color:red;
+}
+
+.doyoumean{
+color:black;
+font-weight:600;
+font-size: 20px;
+}
+
+#didyoumean{
+color: #007bff;
+cursor: pointer;
+
+}
+.clearfix{
+clear: both;
+}
+
+.labelclass{
+    margin-bottom: 2px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.intro-font{
+font-size:20px;
+}
+
+.intro-fontcolor{
+color:gray;
 }

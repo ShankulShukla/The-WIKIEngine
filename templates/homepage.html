@@ -13,15 +13,15 @@
             <div class="jumbotron p-3 p-md-4 text-white rounded bg-dark mt-3">
                 <div class="col-md-6 px-0">
                     <h1 class="display-4 font-italic"><a href="/" class="outline-none">WIKI-Engine</a></h1>
-                    <p class="lead my-3">A search engine with multiple functionalities to serve the client the need of the hour blah blah</p>
-
+                    <p class="lead my-3">A wikipedia based search engine based on custom developed multi-threaded web crawler.</p>
+                    <p class="intro-font">Developed by - <a href="https://www.linkedin.com/in/shankul-shukla-880465146" class="intro-fontcolor">Shankul Shukla</a></p>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-8">
-                <form action="/search" method="Post">
-                    <div class="row align-items-center">
+                <form action="/search" method="GET">
+                    <div class="row align-items-center clearfix">
                         <div class="col">
                             <input class="form-control form-control-lg form-control-borderless" value='{{key}}' type="search" name="keyword" placeholder="Search topics or keywords" required>
                         </div>
@@ -48,6 +48,10 @@
                     <span class="padding" id="image">Images</span>
                 </div>
                 <div id="pageResult">
+                    {% if (res_l1|length == 0 and res_l2|length == 0 and res_l2|length == 0 and key != "") %}
+                    <div class="resultHead color-red">No results found</div>
+                    <div class="resultHead doyoumean">Do you mean? <a href="/search?keyword={{textSuggest}}" id="didyoumean">{{ textSuggest }}</a></div>
+                    {% endif %}
                     {% if res_l1|length > 0 %}
                         <div class="resultHead">Most relevant - ({{res_l1|length}} results) </div>
                         {% for key in res_l1 %}
@@ -66,7 +70,7 @@
                     {% endif %}
 
                     {% if res_l2|length > 0 %}
-                        <div class="resultHead">Other results - ({{res_l2|length}}results) </div>
+                        <div class="resultHead">Other results - ({{res_l2|length}} results) </div>
                         {% for key in res_l2 %}
                             <div class="resultBlock">
                                 <div class="heading">  {{ key }}</div>
@@ -83,7 +87,7 @@
                     {% endif %}
 
                     {% if res_l3|length > 0 %}
-                        <div class="resultHead">Extended results - ({{res_l3|length}}results) </div>
+                        <div class="resultHead">Extended results - ({{res_l3|length}} results) </div>
                         {% for key in res_l3 %}
                             <div class="resultBlock">
                                 <div class="heading">  {{ key }}</div>
@@ -102,6 +106,9 @@
                 </div>
 
                 <div id="imageResult">
+                    {% if (imgres_l1|length == 0 and imgres_l2|length == 0 and imgres_l2|length == 0 and key != "") %}
+                    <div class="resultHead color-red">No results found</div>
+                    {% endif %}
                     {% if imgres_l1|length > 0 %}
                         <div class="resultHead">Most relevant - ({{imgres_l1|length}} results)</div>
                         {% for key in imgres_l1 %}
@@ -120,7 +127,7 @@
                     {% endif %}
 
                     {% if imgres_l2|length > 0 %}
-                        <div class="resultHead">Other results - ({{imgres_l2|length}}results) </div>
+                        <div class="resultHead">Other results - ({{imgres_l2|length}} results) </div>
                         {% for key in imgres_l2 %}
                             <div class="resultBlock">
                                 <div class="heading">  {{ key }}</div>
@@ -137,7 +144,7 @@
                     {% endif %}
 
                     {% if imgres_l3|length > 0 %}
-                        <div class="resultHead">Extended Results - ({{imgres_l3|length}}results) </div>
+                        <div class="resultHead">Extended Results - ({{imgres_l3|length}} results) </div>
                         {% for key in imgres_l3 %}
                             <div class="resultBlock">
                                 <div class="heading">  {{ key }}</div>
