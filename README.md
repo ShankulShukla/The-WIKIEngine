@@ -1,6 +1,6 @@
 # The WIKIEngine
 
-## INTRODUCTION -
+## Introdution -
 
 - **WIKIEngine** is a Wikipedia-based search engine built on top of a multi-threaded and efficient web crawler. 
 - The *WIKIEngine* is capable of querying relevant Wikipedia **pages as well as images** associated with the user search. 
