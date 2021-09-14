@@ -56,18 +56,25 @@ Visit appropriate files to understand the functionality in detail, I have tried 
 
 **_wikiSearch.py_-** base search handler
 
+## Usage and Installation -
 
+*Required python 3.x installed*
 
-## How to use it...
-1. Just git clone the repo.
-2. In command prompt, cd to the directory of WIKIEngine.
-3. Run the main_spider.py with python.(parsing the web)
-4. Run the WIKI-search.py with python to search over different word in new parsed dictionary formed
-> For more understanding look forward to see the code.
+> Recommend python>3.5 (nothing will break :grin:)
 
-## FUTURE SCOPE
+**Clone the repo**
 
-> For maintaining the simplicity following ideas are being ignored, but one can implement these ideas for providing optimizations to **WIKIEngine** -
-- Users can the store the index dictionary into an [hash table](https://en.wikipedia.org/wiki/Hash_function) for fast accessing.
-- [Suffix tree](https://en.wikipedia.org/wiki/Suffix_tree) implementation for efficient searching over the index. 
+**Install the dependencies**
 
+``` pip install -r requirements.txt ```
+
+**To run WIKIEngine**
+
+```python apps.py```
+
+**To run web crawler**
+
+ ```python main_spider.py```
+> This will ask for seed url as starting point.
+
+***Yeah!!! Just three simple commands :nerd_face: but you can definitely play with the code***
