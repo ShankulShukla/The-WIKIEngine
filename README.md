@@ -25,7 +25,7 @@
 
 ## Code overview -
 
-**static[Folder]-** css and image resource for web app.
+**_static[Folder]-_** css and image resource for web app.
 
 ## How to use it...
 1. Just git clone the repo.
