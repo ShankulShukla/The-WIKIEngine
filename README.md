@@ -12,7 +12,7 @@ In addition to searching, the *WIKIEngine* is also able to provide **search sugg
 
 *WIKIEngine* categorizes search results into **most relevant** and **other relevant** results, based on the relevance of the result page or image with respect to the user search. 
 
-*WIKIEngine*'s web crawler scrapes the pages for the most relevant data and then indexes them into its database. Creating union pages under the same key, noting page references for keys, and using NLP to optimize the key indexing corresponding to the pages are some features of the crawler.
+*WIKIEngine*'s web crawler scrapes the pages for the most relevant data and then indexes them into its database. Creating union pages under the same key, noting page references for keys, using NLP to optimize the key indexing corresponding to the pages, customizable crawl parameters are some features of the crawler.
 
 Web app for *WIKIEngine* is developed using flask and deployed on heroku.
 
