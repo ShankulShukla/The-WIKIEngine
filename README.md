@@ -22,6 +22,8 @@ Process start at main_spider.py (for crawling) and WIKIsearch.py (for searching)
 
 ### Deployed WIKIEngine -
 
+>> The WIKIEngine is publicly deployed on Heroku Server here. 
+
 ![image](https://drive.google.com/uc?export=view&id=1AlOrTbZ3rM3IuBuAZ9KiOqoq4x1X_UtH)
 
 > Spell check/ Search suggestion functionality -
