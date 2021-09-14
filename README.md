@@ -10,17 +10,7 @@
 - *WIKIEngine*'s web crawler scrapes the pages for the most relevant data and then indexes them into its database. Creating union pages under the same key, noting page references for keys, and using NLP to optimize the key indexing corresponding to the pages are some features of the crawler.
 - Visit appropriate files to understand the functionality in detail, I have tried to add a brief comment for each function.
 
-## INTERNAL OVERVIEW -
-
-The **WIKIEngine** starts with a URL to visit taken from the user as input known as the *seed page*. As the crawler visits the seed page, it gets bunch of hyperlinks in the page and adds them to the list of URL's to be visited, also different title keywords found while scraping the page act as the keys for the index dictionary and url associated with that word is used in the value list of the dictionary.
-
-These task are being operated in the guidance of *threader* which divides the task of visiting the pages into threads, for concurrent execution leading to *maximum utilization of CPU*. This process is then repeated in accordance to the number of pages to be crawled and the size of index to be built as the user want. 
-
-At last user can make use of the index dictionary created via crawler stored in a json file to search for words and can find the most relevant webpages in accordance to the criteria provided in the WIKI-search.
-
-Process start at main_spider.py (for crawling) and WIKIsearch.py (for searching)
-
-### Deployed WIKIEngine -
+## Deployed WIKIEngine -
 
 > The WIKIEngine is publicly deployed on Heroku Server [here](https://wikiengine.herokuapp.com/) or at https://wikiengine.herokuapp.com. 
 
