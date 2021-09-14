@@ -1,11 +1,14 @@
 # The WIKIEngine
+
 ## INTRODUCTION -
 
 - WIKIEngine is a Wikipedia-based search engine built on top of a multi-threaded and efficient web crawler. 
 - The WIKIEngine is capable of querying relevant Wikipedia pages as well as images associated with the user search. 
 - Currently, WIKIEngine queries over 100,000 pages and over 50,000 images indexed by the web crawler. 
 - In addition to searching, the WIKIEngine is also able to provide search suggestions (do you mean functionality), if the WIKIEngine is not able to find any relevant results under the user search. 
-- WIKIEngine categorizes search results into "most relevant" and "other relevant" results, based on the relevance of the result page or image with respect to the user search. - - Visit appropriate files to understand the functionality in detail, I have tried to add a brief comment for each function.
+- WIKIEngine categorizes search results into "most relevant" and "other relevant" results, based on the relevance of the result page or image with respect to the user search. 
+- WIKIEngine's web crawler scrapes the pages for the most relevant data and then indexes them into its database. Creating union pages under the same key, noting page references for keys, and using NLP to optimize the key indexing corresponding to the pages are some features of the crawler.
+- Visit appropriate files to understand the functionality in detail, I have tried to add a brief comment for each function.
 
 **WIKIEngine** is a simple, multi-threaded and efficient web crawler which mimic's the functionalities of usual web spider but it is also having additional feature of a search engine for surfing over the internet a.k.a providing useful results for searched keyword.
 
