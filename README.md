@@ -20,7 +20,9 @@ At last user can make use of the index dictionary created via crawler stored in 
 
 ### For more undersatnding refer to following illustration- 
 > Process start at main_spider.py (for crawling) and WIKIsearch.py (for searching)
+
 ![Alt Text](https://drive.google.com/file/d/1AlOrTbZ3rM3IuBuAZ9KiOqoq4x1X_UtH/view?usp=sharing)
+
 ![project](https://user-images.githubusercontent.com/30331393/38129174-7fa1bf22-341b-11e8-98a9-0ee809ca1144.png)
 
 
