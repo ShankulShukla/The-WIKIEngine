@@ -18,10 +18,16 @@ These task are being operated in the guidance of *threader* which divides the ta
 
 At last user can make use of the index dictionary created via crawler stored in a json file to search for words and can find the most relevant webpages in accordance to the criteria provided in the WIKI-search.
 
-### For more undersatnding refer to following illustration- 
-> Process start at main_spider.py (for crawling) and WIKIsearch.py (for searching)
+Process start at main_spider.py (for crawling) and WIKIsearch.py (for searching)
+
+### Deployed WIKIEngine -
 
 ![image](https://drive.google.com/uc?export=view&id=1AlOrTbZ3rM3IuBuAZ9KiOqoq4x1X_UtH)
+
+> Spell check/ Search suggestion functionality -
+
+
+![image](https://drive.google.com/uc?export=view&id=12BDkz_0hhTetSMChJ-nAViiuEBjYDqI1)
 
 ![project](https://user-images.githubusercontent.com/30331393/38129174-7fa1bf22-341b-11e8-98a9-0ee809ca1144.png)
 
