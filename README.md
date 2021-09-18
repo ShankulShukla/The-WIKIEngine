@@ -14,7 +14,7 @@ In addition to searching, the *WIKIEngine* is also able to provide **search sugg
 
 *WIKIEngine*'s web crawler scrapes the pages for the most relevant data and then indexes them into its database. Creating union pages under the same key, noting page references for keys, using NLP to optimize the key indexing corresponding to the pages, customizable crawl parameters are some features of the crawler.
 
-Web app for *WIKIEngine* is developed using flask and deployed on heroku.
+Web app for *WIKIEngine* is developed using flask and deployed on Heroku.
 
 Visit appropriate files to understand the functionality in detail, I have tried to add a brief comment for functions.
 
@@ -30,27 +30,27 @@ Visit appropriate files to understand the functionality in detail, I have tried 
 
 ## Code overview -
 
-**_static[Folder]_-** css and image resource for web app
+**_static[Folder]_-** CSS and image resource for web app
 
 **_templates[Folder]_-** HTML template for web app
 
-**_Procfile_-** specifies commands that are executed by the web app on startup
+**_Procfile_-** specifies commands that are executed by the web app on the startup
 
 **_apps.py_-** defines app object instance of Flask object, also from here application is started and requests are handled
 
 **_Networking.py_-** request the page and handles the response
 
-**_Parser.py_-** parse page to extract data for indexing 
+**_Parser.py_-** parse the page to extract data for indexing 
 
-**_Pre-process-for-search.py_-** pre-process the indexing created by crawler
+**_Pre-process-for-search.py_-** pre-process the indexing created by the crawler
 
-**_Update_index.py_-** extend and update the indexing after crawl
+**_Update_index.py_-** extend and update the indexing after the crawl
 
 **_index.json_-** json based page index
 
 **_imgind.txt_-** cpickle based image index (space efficient and faster loading)
 
-**_ind.txt_-** cpickle based page index (space efficient and faster loading)
+**_ind.txt_-** cpickle based page index (space-efficient and faster loading)
 
 **_main_spider.py_-** base web crawler handler
 
@@ -75,6 +75,6 @@ Visit appropriate files to understand the functionality in detail, I have tried 
 **To run web crawler**
 
  ```python main_spider.py```
-> This will ask for seed url as starting point.
+> This will ask for a seed URL as its starting point for web parsing.
 
 ***Yeah!!! Just three simple commands :nerd_face: but you can definitely play with the code***
